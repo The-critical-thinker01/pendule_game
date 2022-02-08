@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+
+body{
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(0deg , rgba(204,146,255,1) 0%,rgba(255,51,163,0.4) 100% );
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+body *{
+    font-family:"Tangerine", "permanent Marker", "sans-serif";
+    font-size: 30px;
+
+}  
+
+#play_new_game{
+background: transparent;
+border: 0;
+color: blue;
+border: 5px double khaki;
+padding: 10px 20px;
+
+}
+
+.win_msg{
+color: green;
+font-size: 40px;
+padding: 20px 0px;
+
+}
+
+.lost_msg{
+    color: black;
+    font-size: 40px;
+    padding: 20px 0px;
+    
+    }
+   
+    .scoore{
+            color: blue;
+    }
+
+    #augmenter,#reduire{
+        border-radius: 30px;
+        padding: 2px;
+        margin: 0px 20px;
+        color: white;
+    }
+    #augmenter{
+        background-color: green;
+    }
+    #reduire{
+        background-color: red;
+    }
+
+    #montant{
+        color: white;
+    }
+
+#mot_courent span{
+    font-size: 40px;
+    border-bottom:3px solid white ;
+    margin:  0 5px;
+    padding: 5px 20px;
+    color: white;
+   }
+
+#mot_courent span.notfinded{
+     color: rgba(255, 255, 255, 0.3);
+   }
+
+#mot_courent span.lost{
+    color: red;
+   }
+
+/* copie du net pour les coeur */
+
+#life{
+margin-top: 50px;
+}
+
+#life .heart {
+        background-color: red;
+        display: inline-block;
+        height: 20px;
+        margin: 0 10px;
+        position: relative;
+        top: 0;
+        transform: rotate(-45deg);
+        width: 20px;
+  }
+  
+ #life .heart:before, 
+ #life  .heart:after {
+        content: "";
+        background-color:red;
+        border-radius: 50%;
+        height: 20px;
+        position: absolute;
+        width: 20px;
+  }
+  
+  #life .heart:before {
+        top: -10px;
+        left: 0;
+  }
+  
+  #life .heart:after {
+        left: 10px;
+        top: 0;
+  }
+  
+/* fin de copie */
+
+#life .heart.empty{
+ border: 1px solid red;
+    opacity: 0.1;
+} 
+
+#keyboard{
+    background: transparent;
+    background-color: violet;
+    /* border: 3px solid skyblue; */
+    margin-top: 40px ;
+    max-width: 600px;
+    display: inline-block;
+} 
+
+#keyboard button{
+background: transparent;
+color: white;
+padding: 5px 20px;
+cursor: pointer;
+border: 0px;
+margin: 5px;
+font-size: 40px;
+display: inline-block;
+width: 30px;
+text-align: center;
+
+    /* background: black;
+    color: white;
+    padding: 5px;
+    border: 0;
+    margin: 5px;
+    display: inline-block;
+    width: 30px ; */
+}
+
+
+#keyboard button.used{
+    opacity: 0.5;
+}
